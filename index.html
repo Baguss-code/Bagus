@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sayangku ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>✨ Selamat Ulang Tahun Cantikku! ✨</h1>
+        <p style="font-size: 1.2rem; color: #ff1493; margin-top: 1rem;">
+            Hari ini adalah hari istimewa untuk merayakan dirimu yang luar biasa! 💕
+        </p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+        <button class="nav-btn" onclick="showSection('countdown')">🎂 Hitung Mundur</button>
+        <button class="nav-btn" onclick="showSection('gallery')">📸 Galeri</button>
+        <button class="nav-btn" onclick="showSection('messages')">💌 Pesan Cinta</button>
+        <button class="nav-btn" onclick="showSection('memories')">🌟 Kenangan</button>
+        <button class="nav-btn" onclick="showSection('surprise')">🎁 Kejutan</button>
+    </div>
+
+    <!-- Countdown Section -->
+    <div id="countdown" class="section active">
+        <div class="countdown">
+            <h2>🎉 Waktu Menuju Hari Istimewamu! 🎉</h2>
+            <div class="timer" id="timer">
+                <div class="time-unit">
+                    <span class="number" id="days">00</span>
+                    <span class="label">Hari</span>
+                </div>
+                <div class="time-unit">
+                    <span class="number" id="hours">00</span>
+                    <span class="label">Jam</span>
+                </div>
+                <div class="time-unit">
+                    <span class="number" id="minutes">00</span>
+                    <span class="label">Menit</span>
+                </div>
+                <div class="time-unit">
+                    <span class="number" id="seconds">00</span>
+                    <span class="label">Detik</span>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; font-size: 1.1rem; color: #ff1493;">
+                Setiap detik membawa kita lebih dekat untuk merayakan DIRIMU! 💖
+            </p>
+        </div>
+    </div>
+
+    <!-- Photo Gallery Section -->
+    <div id="gallery" class="section">
+        <div class="gallery">
+            <h2>📸 Kenangan Indah Kita</h2>
+            <div class="photo-grid">
+                <div class="photo-item" onclick="showPhotoMessage(1)">
+                    <div class="photo-placeholder">
+                        <img src="v1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-item" onclick="showPhotoMessage(2)">
+                    <div class="photo-placeholder">
+                        <img src="v2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-item" onclick="showPhotoMessage(3)">
+                    <div class="photo-placeholder"><img src="v3.jpg" alt="">🌸</div>
+                </div>
+                <div class="photo-item" onclick="showPhotoMessage(4)">
+                    <div class="photo-placeholder">
+                        <img src="v4.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-item" onclick="showPhotoMessage(5)">
+                    <div class="photo-placeholder">
+                        <img src="v5.jpg" alt="">
+                    </div>
+                </div>
+                <div class="photo-item" onclick="showPhotoMessage(6)">
+                    <div class="photo-placeholder">
+                        <img src="v6.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; color: #ff1493; font-style: italic;">
+                Klik setiap kenangan untuk melihat pesan spesial! 💕
+            </p>
+        </div>
+    </div>
+
+    <!-- Messages Section -->
+    <div id="messages" class="section">
+        <div class="messages">
+            <h2>💌 Surat Cinta Untukmu</h2>
+            
+            <div class="message-card">
+                <p>Kamu menerangi duniaku dengan cara yang tak akan pernah kamu tahu. Senyumanmu adalah pemandangan favoritku, dan tawamu adalah suara favoritku. Selamat ulang tahun untuk orang paling luar biasa yang aku kenal!</p>
+                <div class="author">- Dengan segenap cintaku 💕</div>
+            </div>
+            
+            <div class="message-card">
+                <p>Setiap hari bersamamu terasa seperti perayaan, tapi hari ini sangat istimewa karena ini adalah hari ketika dunia diberkahi dengan kehadiranmu. Terima kasih sudah menjadi dirimu!</p>
+                <div class="author">- Pengagum terbesarmu ✨</div>
+            </div>
+            
+            <div class="message-card">
+                <p>Kamu tidak hanya bertambah tua, tapi semakin menakjubkan! Kebaikan, kecantikan, dan kekuatanmu menginspirasi aku setiap hari. Mari kita rayakan tahun petualangan baru bersama!</p>
+                <div class="author">- Selamanya milikmu 💖</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Lane Section -->
+    <div id="memories" class="section">
+        <div class="messages">
+            <h2>🌟 Perjalanan Kita Bersama</h2>
+            
+            <div class="memory">
+                <div class="memory-date">Pertemuan Pertama</div>
+                <p>Saat mata kita bertemu, aku tahu sesuatu yang ajaib akan dimulai. Kamu masuk ke dalam hidupku dan segalanya berubah menjadi lebih baik.</p>
+            </div>
+            
+            <div class="memory">
+                <div class="memory-date">Kencan Pertama</div>
+                <p>Kupu-kupu di perut, percakapan tanpa henti, dan momen sempurna ketika aku sadar tidak ingin malam itu berakhir. Kencan pertama terbaik yang pernah ada!</p>
+            </div>
+            
+            <div class="memory">
+                <div class="memory-date">Petualangan Kita</div>
+                <p>Dari perjalanan dadakan hingga malam nonton film yang tenang, setiap saat bersamamu menjadi kenangan berharga. Mari kita ciptakan lebih banyak petualangan!</p>
+            </div>
+            
+            <div class="memory">
+                <div class="memory-date">Saat Ini</div>
+                <p>Membuat perayaan ulang tahun spesial ini untukmu, merasa bersyukur atas setiap hari yang kita jalani bersama. Kamu membuat hidup menjadi indah!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Surprise Section -->
+    <div id="surprise" class="section">
+        <div class="interactive-section">
+            <h2 style="color: #ff1493; margin-bottom: 2rem;">🎁 Kejutan Ulang Tahun!</h2>
+            
+            <p style="font-size: 1.3rem; margin-bottom: 2rem; color: #333;">
+                Klik tombol ajaib untuk melihat kejutan spesialmu! ✨
+            </p>
+            
+            <button class="love-button" onclick="revealSurprise()">
+                🎉 Klik untuk Keajaiban! 🎉
+            </button>
+            
+            <div id="surprise-content" style="display: none; margin-top: 2rem;">
+                <div style="background: rgba(255, 255, 255, 0.2); padding: 2rem; border-radius: 20px; backdrop-filter: blur(10px);">
+                    <h3 style="color: #ff1493; margin-bottom: 1rem; font-size: 1.8rem;">🌟 Daftar Keinginan Ulang Tahunmu 🌟</h3>
+                    <p style="font-size: 1.2rem; margin-bottom: 1rem;">Aku sudah merencanakan sesuatu yang istimewa hanya untukmu...</p>
+                    <div style="text-align: left; max-width: 400px; margin: 0 auto;">
+                        <p>🎈 Hari yang dipenuhi dengan semua hal favoritmu</p>
+                        <p>🍰 Kue favoritmu (sudah dipesan!)</p>
+                        <p>🎵 Playlist lagu-lagu yang mengingatkanku padamu</p>
+                        <p>🌹 Bunga segar untuk mencerahkan harimu</p>
+                        <p>💕 Dan yang terpenting, semua cintaku!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem;">
+                <button class="love-button" onclick="createHeartExplosion()">
+                    💖 Kirim Cinta! 💖
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -60,12 +60,12 @@
         // Photo Gallery Interaction
         function showPhotoMessage(photoNum) {
             const messages = [
-                "Kamu adalah hadiah terindah dalam hidupku.🌹",
-                "Kamu membuatku merasa hidup. 💐",
-                "Kamu membuatku merasa dicintai.🌸",
-                "Aku tidak pernah merasa sendirian denganmu.🌷",
-                "Kamu adalah tempatku beristirahat, tempatku merasa tenang.🪷",
-                "Kamu adalah cinta pertamaku🥰"
+                "Kamu adalah hadiah terindah dalam hidupku 🌹",
+                "Kamu membuatku merasa hidup  💐",
+                "Kamu membuatku merasa dicintai 🌸",
+                "Aku tidak pernah merasa sendirian denganmu 🌷",
+                "Kamu adalah tempatku beristirahat, tempatku merasa tenang 🪷",
+                "Kamu adalah cinta pertamaku 🥰"
             ];
             
             alert(messages[photoNum - 1]);

@@ -60,12 +60,12 @@
         // Photo Gallery Interaction
         function showPhotoMessage(photoNum) {
             const messages = [
-                "Ini mewakili petualangan pertama kita bersama! 🌟",
-                "Ingat matahari terbit indah yang kita saksikan? 🌅",
-                "Seperti bunga-bunga ini, kamu membuat segalanya mekar! 🌸",
-                "Waktu-waktu seru dan tawa kita bersama! 🎭",
-                "Saat-saat damai di tepi air bersamamu 🌊",
-                "Kamu adalah bintang yang bersinar di setiap momen! ⭐"
+                "Kamu adalah hadiah terindah dalam hidupku.🌹",
+                "Kamu membuatku merasa hidup. 💐",
+                "Kamu membuatku merasa dicintai.🌸",
+                "Aku tidak pernah merasa sendirian denganmu.🌷",
+                "Kamu adalah tempatku beristirahat, tempatku merasa tenang.🪷",
+                "Kamu adalah cinta pertamaku🥰"
             ];
             
             alert(messages[photoNum - 1]);
